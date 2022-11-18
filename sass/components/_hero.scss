@@ -1,0 +1,57 @@
+.hero {
+  padding: 6rem;
+
+  &__trustpilot-img {
+    display: block;
+    width: 15rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    transition: all 0.2s;
+    text-decoration: none;
+    color: $color-primary;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-dark;
+  }
+
+  &__pictures {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  &__img-box {
+    position: relative;
+    height: 80vh;
+    width: 80%;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: left;
+    border-radius: 1rem;
+    border-top-left-radius: 10rem;
+  }
+
+  &__composition {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 30%);
+  }
+
+  &__pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-30%, 20%) rotate(-100deg);
+  }
+}

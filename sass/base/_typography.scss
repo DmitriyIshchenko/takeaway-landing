@@ -1,0 +1,16 @@
+.heading-primary {
+  line-height: 1;
+  font-size: 6rem;
+  font-weight: 400;
+  color: $color-black;
+
+  span {
+    color: $color-primary;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  color: $color-grey-dark-2;
+  max-width: 75ch;
+}
