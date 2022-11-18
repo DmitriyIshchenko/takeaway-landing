@@ -1,0 +1,57 @@
+.composition-big {
+  position: relative;
+
+  &__img-primary {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  &__img-left {
+    position: absolute;
+    left: 0;
+
+    transform: translateX(-50%);
+    width: 7rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 20%;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+
+    background-image: url(../img/pattern-wave.svg),
+      linear-gradient(rgba($color-primary, 1), rgba($color-primary, 1));
+    background-size: 170%;
+    background-position: bottom 20% right 0%;
+    background-repeat: no-repeat;
+    fill: $color-white;
+
+    &--top {
+      top: 15%;
+    }
+
+    &--bottom {
+      bottom: 15%;
+    }
+  }
+
+  &__img-right {
+    position: absolute;
+    display: block;
+    right: 0;
+    transform: translateX(50%);
+    width: 15rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20%;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+
+    &--top {
+      top: 25%;
+    }
+
+    &--bottom {
+      bottom: 15%;
+    }
+  }
+}
