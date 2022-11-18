@@ -21,6 +21,12 @@ body {
   .heading-primary span {
     color: #35b8be; }
 
+.heading-secondary {
+  line-height: 1;
+  color: #35b8be;
+  font-weight: 400;
+  font-size: 5rem; }
+
 .paragraph {
   font-size: 1.8rem;
   color: #546285;
@@ -34,6 +40,46 @@ body {
 
 .u-mb-sm {
   margin-bottom: 3rem; }
+
+.composition-big {
+  position: relative; }
+  .composition-big__img-primary {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 1rem; }
+  .composition-big__img-left {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    width: 7rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 20%;
+    box-shadow: 0 1rem 3rem rgba(8, 9, 10, 0.2);
+    background-image: url(../img/pattern-wave.svg), linear-gradient(#35b8be, #35b8be);
+    background-size: 170%;
+    background-position: bottom 20% right 0%;
+    background-repeat: no-repeat;
+    fill: #fff; }
+    .composition-big__img-left--top {
+      top: 15%; }
+    .composition-big__img-left--bottom {
+      bottom: 15%; }
+  .composition-big__img-right {
+    position: absolute;
+    display: block;
+    right: 0;
+    transform: translateX(50%);
+    width: 15rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20%;
+    box-shadow: 0 1rem 3rem rgba(8, 9, 10, 0.2); }
+    .composition-big__img-right--top {
+      top: 25%; }
+    .composition-big__img-right--bottom {
+      bottom: 15%; }
 
 .composition-round {
   position: relative; }
@@ -149,3 +195,11 @@ body {
     height: 100%;
     background-color: #f5fbfc;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 70%); }
+
+.about {
+  justify-items: center;
+  align-items: center;
+  padding: 6rem;
+  padding-top: 8rem;
+  background-color: #f5fbfc;
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%); }
