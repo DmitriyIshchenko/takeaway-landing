@@ -1,0 +1,68 @@
+.card {
+  display: grid;
+  align-items: center;
+  column-gap: 1.5rem;
+  row-gap: 0.8rem;
+  grid-template-columns: 13rem min-content;
+
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 5rem rgba($color-black, 0.1);
+  background-color: $color-white;
+
+  &__img-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    overflow: hidden;
+    aspect-ratio: 1;
+    padding-right: 1.5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+  }
+
+  &__heading {
+    grid-column: 2 / 4;
+
+    font-size: 1.8rem;
+    align-self: end;
+  }
+
+  &__price {
+    grid-column: 4 / 5;
+    font-size: 1.5rem;
+    color: $color-primary;
+    align-self: end;
+    justify-self: end;
+  }
+
+  &__description {
+    grid-column: 2 / 5;
+    font-size: 1.6rem;
+    align-self: end;
+  }
+
+  &__amount {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    padding: 0 2.5rem;
+    border: 1px solid $color-grey-light-2;
+    border-radius: 0.5rem;
+    background-color: $color-grey-light-1;
+
+    font-size: 1.8rem;
+  }
+
+  &__btn {
+    grid-column: 3 / 5;
+    justify-self: start;
+  }
+}
