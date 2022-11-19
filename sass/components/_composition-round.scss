@@ -23,12 +23,33 @@
       display: block;
       padding: 1rem;
     }
+
+    &--3 {
+      top: 10%;
+      left: -10%;
+      width: 7rem;
+      height: 7rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 0.5rem solid $color-white;
+    }
   }
 
   &__img-right {
     position: absolute;
     display: block;
     box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+
+    &--1 {
+      top: 0;
+      right: 0;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 20%;
+      background-color: $color-white;
+      padding: 2rem;
+      fill: $color-primary;
+    }
 
     &--2 {
       top: 10%;
@@ -37,17 +58,18 @@
       height: 4rem;
       border-radius: 20%;
       background-color: $color-white;
-      display: block;
       padding: 1rem;
     }
-  }
 
-  .icon {
-    // position: absolute;
-    display: block;
-    background-color: orangered;
-    width: 4rem;
-    height: 4rem;
-    padding: 1rem;
+    &--3 {
+      top: 40%;
+      right: -10%;
+      width: 7rem;
+      height: 7rem;
+      object-fit: cover;
+      object-position: 20% 0%;
+      border-radius: 50%;
+      border: 0.5rem solid $color-white;
+    }
   }
 }

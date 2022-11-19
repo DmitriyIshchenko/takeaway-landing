@@ -20,9 +20,38 @@
 .about {
   justify-items: center;
   align-items: center;
-  padding: 6rem;
+  padding: 8rem;
   padding-top: 8rem;
 
   background-color: $color-grey-light-1;
   clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.how {
+  padding: 8rem;
+
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  row-gap: 8rem;
+
+  text-align: center;
+
+  &__heading {
+    grid-column: 1/-1;
+  }
+
+  &__line {
+    margin-top: 9rem;
+    width: 10rem;
+    height: 2px;
+    background-color: $color-grey-light-2;
+  }
+}
+
+.stage {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
 }
