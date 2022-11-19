@@ -55,3 +55,32 @@
   justify-items: center;
   gap: 1.5rem;
 }
+
+.section-menu {
+  background-color: $color-grey-light-1;
+  padding: 8rem;
+  padding-top: 15rem;
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+
+  & > p {
+    text-align: center;
+    max-width: 60%;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(46rem, 1fr));
+  gap: 2rem;
+
+  width: 100%;
+
+  &__controls {
+    display: flex;
+    gap: 2.5rem;
+  }
+}
