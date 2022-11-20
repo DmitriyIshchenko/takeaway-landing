@@ -1,9 +1,11 @@
 .composition-round {
   position: relative;
+  width: MAX(30vh, 20rem);
+  aspect-ratio: 1;
 
   &__img-primary {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -12,12 +14,12 @@
     position: absolute;
     display: block;
     box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+    aspect-ratio: 1;
 
     &--2 {
       top: 25%;
       left: -10%;
-      width: 7rem;
-      height: 7rem;
+      height: MIN(15rem, 40%);
       border-radius: 20%;
       background-color: $color-white;
       display: block;
@@ -27,8 +29,7 @@
     &--3 {
       top: 10%;
       left: -10%;
-      width: 7rem;
-      height: 7rem;
+      height: MIN(15rem, 40%);
       object-fit: cover;
       border-radius: 50%;
       border: 0.5rem solid $color-white;
@@ -39,33 +40,31 @@
     position: absolute;
     display: block;
     box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+    aspect-ratio: 1;
 
     &--1 {
       top: 0;
       right: 0;
-      width: 7rem;
-      height: 7rem;
+      height: MIN(7rem, 35%);
       border-radius: 20%;
       background-color: $color-white;
-      padding: 2rem;
+      padding: 1.5rem;
       fill: $color-primary;
     }
 
     &--2 {
       top: 10%;
-      right: 0%;
-      width: 4rem;
-      height: 4rem;
+      right: -5%;
+      height: MIN(7rem, 25%);
       border-radius: 20%;
       background-color: $color-white;
-      padding: 1rem;
+      padding: 7%;
     }
 
     &--3 {
       top: 40%;
       right: -10%;
-      width: 7rem;
-      height: 7rem;
+      height: MIN(15rem, 40%);
       object-fit: cover;
       border-radius: 50%;
       border: 0.5rem solid $color-white;
