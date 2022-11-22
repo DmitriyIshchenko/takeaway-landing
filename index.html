@@ -10,12 +10,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <script defer src="js/script.js"></script>
 
   <title>UpMeal - Beautiful food delivered to your door</title>
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="logo" class="logo__img">
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">How it works</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Meals</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <button class="mobile-nav-btn">
+      <span class="mobile-nav-btn__icon"></span>
+    </button>
+  </header>
   <main>
 
     <section class="hero container">
@@ -26,7 +44,7 @@
           Ipsum
           has
           been the industry's standard dummy text ever since the 1500.</p>
-        <a href="#" class="btn u-mb-sm">Place an Order</a>
+        <a href="#" class="btn ">Place an Order</a>
         <img src="img/trustpilot-logo.png" alt="Trustpilot logo" class="hero__trustpilot-img">
         <p class="paragraph"> <a href="https://www.trustpilot.com/" class="hero__link">4.8 out of 5</a> based on 2000+
           reviews

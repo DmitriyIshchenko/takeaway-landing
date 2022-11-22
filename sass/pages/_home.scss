@@ -1,11 +1,13 @@
 .hero {
   position: relative;
-  grid-template-rows: 100vh;
+  grid-template-rows: calc(100vh - 7rem);
+  padding-top: 7rem;
 
   &__content {
     grid-column: center-start / col-end 4;
     grid-row: 1 / 2;
     display: grid;
+    gap: 1.5rem;
     grid-template-rows: repeat(5, min-content);
     justify-items: start;
     align-content: center;
