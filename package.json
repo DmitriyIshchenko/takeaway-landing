@@ -2,7 +2,7 @@
   "name": "takeaway-landing",
   "version": "1.0.0",
   "description": "Food delivery company landing",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist --public-url .",
